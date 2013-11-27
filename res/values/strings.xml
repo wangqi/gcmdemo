@@ -1,11 +1,6 @@
 <resources>
   <string name="app_name">GCM Sample Client</string>
-  <string name="unregistered">Unregistered</string>
-  <string name="registering">Registering</string>
   <string name="gcm_registration">Got id from Google: %1$s</string>
-  <string name="server_registration">Sent id to server: %1$s</string>
-  <string name="error_config">Please set the %1$s constant and recompile the app.</string>
-  <string name="already_registered">Device is already registered on server.</string>
   <string name="gcm_registered">From GCM: device successfully registered (regId = %1$s)!</string>
   <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
   <string name="gcm_message">From GCM: you got message!</string>

@@ -1,5 +1,7 @@
 package com.sincetimes.game.push.gcm;
 
+import static com.sincetimes.game.push.gcm.Constants.TAG;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 public class GCMReceiver extends BroadcastReceiver {
+	
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		String regId = intent.getStringExtra(Constants.FIELD_REGISTRATION_ID);
@@ -28,7 +31,8 @@ public class GCMReceiver extends BroadcastReceiver {
 	}
 
 	public static void sendIdToServer(String regId) {
-		(new SendRegistrationIdTask(regId)).execute();
+		//(new SendRegistrationIdTask(regId)).execute();
+		Log.i(TAG, regId);
 	}
 
 	/**
